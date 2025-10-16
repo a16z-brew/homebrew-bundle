@@ -14,12 +14,4 @@ class OktVerify < Formula
         system "chmod", "+x", f if File.file?(f)
         end
       end
-   service do
-       run "#{bin}/oktv.bin"
-       keep_alive true
-       working_dir "#{bin}/"
-   end
-  def post_install
-      system "brew","services","start","okt-verify"
-  end
 end
