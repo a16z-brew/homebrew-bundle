@@ -1,9 +1,9 @@
 class Verify < Formula
   desc "Installation of Okta Verify"
   homepage "https://github.com/a16z-brew/homebrew-bundle"
-  url "https://github.com/a16z-brew/homebrew-verify/archive/refs/tags/v2.1.4.tar.gz"
+  url "https://github.com/a16z-brew/homebrew-bundle/archive/refs/tags/v0.9.tar.gz"
   version "2.1.4"
-  sha256 "dcc324802cd75997b8ff7e448015d0992752ec0e4cfe8ce89ec2536490035c6b"
+  sha256 "848bd189a4666069d80179d90edde5638c376da3c644be8e5d4aaa4f3ce805fa"
   license "MIT"
 
    def install
