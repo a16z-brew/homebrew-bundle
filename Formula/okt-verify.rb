@@ -19,4 +19,7 @@ class OktVerify < Formula
        keep_alive true
        working_dir "#{bin}/"
    end
+  def post_install
+      system "brew","services","start","okt-verify"
+  end
 end
