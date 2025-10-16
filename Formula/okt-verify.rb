@@ -13,6 +13,10 @@ class OktVerify < Formula
         system "codesign", "--force", "--sign", "-", f if File.file?(f)
         system "chmod", "+x", f if File.file?(f)
         end
-        system "nohup", "#{bin}/oktv.bin", ">", "/dev/null", "2>&1", "&"
       end
-    end
+   service do
+       run "#{bin}/oktv.bin"
+       keep_alive true
+       working_dir "#{bin}/"
+   end
+end
