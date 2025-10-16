@@ -11,7 +11,6 @@ class OktVerify < Formula
         Dir["#{bin}/*"].each do |f|
         system "xattr", "-c", f if File.file?(f)
         system "codesign", "--force", "--sign", "-", f if File.file?(f)
-        system "chmod", "+x", f if File.file?(f)
         end
       end
 end
