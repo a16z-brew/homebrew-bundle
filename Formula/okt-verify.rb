@@ -1,4 +1,4 @@
-class Okt-Verify < Formula
+class OktVerify < Formula
   desc "Installation of Okta Verify"
   homepage "https://github.com/a16z-brew/homebrew-bundle"
   url "https://github.com/a16z-brew/homebrew-bundle/archive/refs/tags/v0.9.tar.gz"
